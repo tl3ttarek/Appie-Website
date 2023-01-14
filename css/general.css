@@ -1,0 +1,241 @@
+/* 
+--- 01 TYPOGRAPHY STSTEM
+
+- It's best to do it according to the system but because the design was done I dismiss the system
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Bold: 700
+Black: 900
+
+- Line heights
+
+Default: 1
+- 1.1
+- 1.2
+- 1.3
+- 1.5
+
+- Letter spacing
+- None
+
+--- 02 COLORS
+
+-- Primary: #ff3e66
+-- Tints: -
+-- Shades: -
+
+-- Accents:
+#2c6ff4
+#568cf6
+
+-- Greys:
+#0e1133
+#191a37
+#3e415c
+#5f626a
+#828286
+#d9d9df
+#eef1f6
+#ececef
+
+-- Secondary Colors (icons and small details)
+
+- how does it works icons:
+#2facfc
+#ea4d89
+#3679ff
+#f67842
+#6b88f7
+#3bb094
+#32c36a
+
+- features icons:
+#ff3e66
+#2eacfc
+#33c956
+rgba(255, 62, 102, 0.1)
+rgba(46, 172, 252, 0.1)
+rgba(51, 201, 86, 0.1)
+
+- pricing icons
+#6696f7
+#64d28e
+
+- review stars
+#ffb848
+
+- footer line
+#dee1e4
+
+
+--- 05 SHADOWS
+0 2rem 3.2rem rgba(0, 0, 0, 0.075) (for cta in hero)
+0 1.6rem 4.2rem rgba(0, 0, 0, 0.15) (for featured-in squares)
+
+
+--- 06 BORDER-RADIUS
+
+- 3.6rem (for buttons)
+- 4.6rem (for email form in hero section)
+- 3rem (for yearly/monthly)
+- 2rem (for yearly/monthly inside & popular sticker & cta buttons)
+- 1.1rem (for each pricing plan & featured in squares)
+- 0.9rem (for footer cta)
+- 50% (all circles)
+
+
+--- 07 WHITESPACE
+
+- Actually I made a lot of differences of the system to make it more like the design 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* overglow-x: hidden */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #5f626a;
+
+  overflow-x: hidden;
+}
+
+/******************************/
+/* GENRAL REUSABLE COMPONENTS */
+/******************************/
+
+.container {
+  /* ??? */
+  max-width: 164rem;
+  padding: 0 4.8rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #0e1133;
+}
+
+.heading-primary {
+  font-weight: 400;
+  font-size: 8.6rem;
+  line-height: 1.1;
+
+  margin: 4.2rem 0;
+}
+
+.heading-secondary {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1.2;
+
+  margin-bottom: 2.4rem;
+}
+
+.heading-tertiary {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+
+  margin-bottom: 2rem;
+}
+
+.sub-heading {
+  color: #e6385c;
+  font-size: 2rem;
+  font-weight: 500;
+
+  margin-bottom: 2rem;
+}
+
+.subtext {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: #5f626a;
+}
+
+.subtext-small {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: #828286;
+
+  margin-bottom: 2rem;
+}
+
+strong {
+  font-weight: 900;
+}
+
+/* !!! */
+*:focus {
+  outline: none;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  border-radius: 3.6rem;
+  padding: 2rem 4rem;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff3e66;
+
+  transition: all 0.3s;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #e6385c;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  color: #0e1133;
+  border: #eef1f6 3px solid;
+
+  transition: all 0.3s;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #eef1f6;
+}
