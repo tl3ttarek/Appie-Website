@@ -326,6 +326,10 @@
 /* Below 560px */
 /***************/
 @media (max-width: 35em) {
+  html {
+    font-size: 35%;
+  }
+
   .stats-container {
     grid-template-columns: 1fr;
   }
@@ -351,5 +355,9 @@
 
   .social-media {
     justify-content: center;
+  }
+
+  .feature-2-img {
+    width: 100%;
   }
 }
