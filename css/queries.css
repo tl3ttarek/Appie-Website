@@ -330,6 +330,19 @@
     font-size: 35%;
   }
 
+  .header {
+    gap: 4rem;
+    justify-content: space-between;
+  }
+
+  .video-desctiption {
+    gap: 4.2rem;
+  }
+
+  .video-textbox {
+    margin-left: 2rem;
+  }
+
   .stats-container {
     grid-template-columns: 1fr;
   }
