@@ -103,7 +103,7 @@ rgba(51, 201, 86, 0.1)
 
 html {
   font-size: 62.5%;
-  /* overglow-x: hidden */
+  overflow-x: hidden;
 }
 
 body {
